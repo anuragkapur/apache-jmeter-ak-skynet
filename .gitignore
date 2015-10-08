@@ -1,4 +1,3 @@
 .idea/
 
 apache-jmeter-2.13/**/*.log
-apache-jmeter-2.13/bin/jmeter.log
