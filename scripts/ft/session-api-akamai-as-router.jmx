@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jmeterTestPlan version="1.2" properties="2.8" jmeter="2.13 r1665067">
   <hashTree>
-    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="api.ft.com-perf-test" enabled="true">
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="session-api-akamai-as-router" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
       <boolProp name="TestPlan.functional_mode">false</boolProp>
       <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
@@ -15,14 +15,14 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <intProp name="LoopController.loops">-1</intProp>
+          <stringProp name="LoopController.loops">100</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.num_threads">300</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <longProp name="ThreadGroup.start_time">1444233020000</longProp>
         <longProp name="ThreadGroup.end_time">1444233020000</longProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
-        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.duration">1800</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
@@ -30,13 +30,13 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">mashery-test-api-with-router-1068230309.eu-west-1.elb.amazonaws.com</stringProp>
+          <stringProp name="HTTPSampler.domain">api-test.ft.com</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/sessions/zwK_mSJLVko405sUvVL2zU_xzwAAAVA3qBXhww.MEUCIEab27SuACuPlIRL0zAm4o8XL9jG-yPhKQU98-aAQzYDAiEAx8PP2alKKzMJGdI5mEJG2goThBqhbPCu_YDjpsZD0ds</stringProp>
+          <stringProp name="HTTPSampler.path">/sessions/zwK_mSJLVko405sUvVL2zU_xzwAAAVBG7ctnww.MEYCIQCxPbBRyrO4znAG81UsJXkdV2JvxgzjMMzvB7ZnRnY3cwIhAKrF8Iq4Yv55TDIYm5H0swDCjAFQ0rQ-xHWJ3U5I60BG</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -155,6 +155,10 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
+        <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+          <stringProp name="ConstantTimer.delay">20</stringProp>
+        </ConstantTimer>
+        <hashTree/>
       </hashTree>
     </hashTree>
   </hashTree>
