@@ -15,9 +15,9 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">100</stringProp>
+          <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.num_threads">300</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <longProp name="ThreadGroup.start_time">1444233020000</longProp>
         <longProp name="ThreadGroup.end_time">1444233020000</longProp>
@@ -36,7 +36,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/membership/sessions/zwK_mSJLVko405sUvVL2zU_xzwAAAVBHe9trww.MEUCIQDdCb8eNrp3qfWnlXWvisZ2FO6zphn1hxqi8pZKrltt4gIgMVMyCYByL5ZV4K3PvVS7ApfvDnSNozOHDgVytKq0yVA</stringProp>
+          <stringProp name="HTTPSampler.path">/sessions/zwK_mSJLVko405sUvVL2zU_xzwAAAVBHe9trww.MEUCIQDdCb8eNrp3qfWnlXWvisZ2FO6zphn1hxqi8pZKrltt4gIgMVMyCYByL5ZV4K3PvVS7ApfvDnSNozOHDgVytKq0yVA</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -49,8 +49,8 @@
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">FT_Api_Key</stringProp>
-                <stringProp name="Header.value">f1de53cb-027d-48c2-b39e-88aba89f0a87</stringProp>
+                <stringProp name="Header.name">x-api-key</stringProp>
+                <stringProp name="Header.value">fkDldxjTKA3rxQLvOEmrZ1sWNnNiiVNs9sxCGJA1</stringProp>
               </elementProp>
             </collectionProp>
           </HeaderManager>
