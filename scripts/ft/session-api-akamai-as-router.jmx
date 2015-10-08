@@ -15,7 +15,7 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">100</stringProp>
+          <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">300</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
@@ -36,7 +36,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/sessions/zwK_mSJLVko405sUvVL2zU_xzwAAAVBG7ctnww.MEYCIQCxPbBRyrO4znAG81UsJXkdV2JvxgzjMMzvB7ZnRnY3cwIhAKrF8Iq4Yv55TDIYm5H0swDCjAFQ0rQ-xHWJ3U5I60BG</stringProp>
+          <stringProp name="HTTPSampler.path">/sessions/zwK_mSJLVko405sUvVL2zU_xzwAAAVBHe9trww.MEUCIQDdCb8eNrp3qfWnlXWvisZ2FO6zphn1hxqi8pZKrltt4gIgMVMyCYByL5ZV4K3PvVS7ApfvDnSNozOHDgVytKq0yVA</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
